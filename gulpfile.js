@@ -20,8 +20,8 @@ var gulp 				= require('gulp'),
 
 // Directories
 path = {
-	dev		: 'app/src',
-	prod	: 'app/assets'
+	dev		: 'src',
+	prod	: 'assets'
 }
 
 // =========================
@@ -30,7 +30,7 @@ path = {
 
 // Call Browser-Sync
 gulp.task('browser-sync', function() {
-	browserSync.init(['app/assets/styles/*.css', 'app/assets/scripts/*.js', 'app/*.html'], {
+	browserSync.init(['assets/styles/*.css', 'assets/scripts/*.js', '*.html'], {
 		notify: {
 			styles: {
 				top: 'auto',
@@ -38,7 +38,7 @@ gulp.task('browser-sync', function() {
 			}
 		},
 		server: {
-			 baseDir: 'app'
+			 baseDir: ''
 		}
 	})
 });
@@ -88,7 +88,7 @@ gulp.task('watch', ['stylus', 'browser-sync'], function() {
 	gulp.watch( path.dev + '/stylus/**/**.styl', ['stylus']);
 	gulp.watch( path.dev + '/scripts/**/*.js', ['js']);
 	gulp.watch( path.dev + '/images/**/*.{jpg,png,gif}', ['imagemin']);
-	gulp.watch('./app/*.html');
+	gulp.watch('.*.html');
 	gulp.watch( path.prod + '/styles/main.css', ['css-min'])
 });
 

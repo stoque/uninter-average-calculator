@@ -1,0 +1,36 @@
+{
+  "name": "Sonic-Boilerplate",
+  "version": "1.0.0",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stoque/sonic-boilerplate"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/stoque/sonic-boilerplate/issues"
+  },
+  "homepage": "https://github.com/sonic-boilerplate/Sonic#readme",
+  "devDependencies": {
+    "autoprefixer-stylus": "^0.9.1",
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-group-css-media-queries": "^1.1.0",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.3.0",
+    "gulp-uglify": "^1.5.1",
+    "imagemin-pngquant": "^4.2.0",
+    "kouto-swiss": "^0.11.14",
+    "lost": "^6.7.2",
+    "poststylus": "^0.2.3",
+    "rupture": "^0.6.1"
+  }
+}

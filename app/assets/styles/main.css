@@ -1,0 +1,33 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: 'Source Code Pro', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+h1 span {
+  color: #808080;
+}
+
+.container {
+  *zoom: 1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container:before {
+  content: '';
+  display: table;
+}
+
+.container:after {
+  content: '';
+  display: table;
+  clear: both;
+}

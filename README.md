@@ -1,3 +1,3 @@
 # Calcula Média Uninter
 
-Sistema que calcula a média final da UNINTER
+Sistema que calcula a média final da Uninter

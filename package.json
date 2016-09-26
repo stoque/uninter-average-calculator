@@ -1,5 +1,5 @@
 {
-  "name": "Sonic-Boilerplate",
+  "name": "Calcula-Media-Uninter",
   "version": "1.0.0",
   "main": "gulpfile.js",
   "scripts": {
@@ -7,14 +7,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stoque/sonic-boilerplate"
+    "url": "git+https://github.com/stoque/calcula-media-uninter"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/stoque/sonic-boilerplate/issues"
+    "url": "https://github.com/stoque/calcula-media-uninter/issues"
   },
-  "homepage": "https://github.com/sonic-boilerplate/Sonic#readme",
+  "homepage": "https://github.com/stoque/calcula-media-uninter/Sonic#readme",
   "devDependencies": {
     "autoprefixer-stylus": "^0.9.1",
     "browser-sync": "^2.11.1",

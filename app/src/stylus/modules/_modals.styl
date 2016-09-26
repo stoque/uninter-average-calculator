@@ -1,0 +1,73 @@
+.modal-alert
+
+  > .open:checked ~ .wrap
+
+    &:before,
+    & .overlay
+      display block
+
+    .dialog
+      transform translate(-50%,-50%)
+      position fixed
+      top 40%
+
+  > .wrap
+
+    &:before
+      content ''
+      display none
+      background alpha(#000, 60%)
+      padding $space
+      position fixed
+      top 0
+      bottom 0
+      right 0
+      left 0
+      z-index 101
+
+    > .overlay
+      display none
+      position fixed
+      top 0
+      right 0
+      bottom 0
+      left 0
+      z-index 102
+
+    > .dialog
+      position fixed
+      left 50%
+      top -100%
+      transform translate(-50%,-150%)
+      transition transform .6s ease-in-out
+      max-width 600px
+      width 300px;
+      padding $space
+      background #fff
+      border-radius 4px
+      z-index 103
+      font-size rem(16px)
+      color $text-color
+
+
+      > .close
+        position absolute
+        right $space-xs
+        top 0
+        padding $space-xs
+        font-size rem(22px)
+        font-weight bold
+        color $brand-primary
+        cursor pointer
+
+        &:hover
+          color darken($brand-primary,20%)
+
+.success
+  color #27ae60
+
+.warning
+  color #f1c40f
+
+.error
+  color #c0392b

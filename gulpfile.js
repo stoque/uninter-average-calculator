@@ -49,7 +49,7 @@ gulp.task('stylus', function() {
 		.pipe(plumber())
 		.pipe(stylus({
 			use:[prefixer(), rupture(), koutoSwiss(), poststylus('lost')]
-		})) 
+		}))
 		.pipe(gcmq())
 		.pipe(gulp.dest(path.prod + '/styles'));
 });
@@ -67,16 +67,16 @@ gulp.task('js', function(){
 	return gulp.src(path.dev + '/scripts/**/*.js')
 		.pipe(plumber())
 		.pipe(concat('main.js'))
-		.pipe(uglify())
+		// .pipe(uglify())
 		.pipe(gulp.dest(path.prod + '/scripts'))
 });
 
 // Call task Imagemin
 gulp.task('imagemin', function() {
 	return gulp.src(path.dev + '/images/**/*')
-		.pipe(imagemin({ 
-			optimizationLevel: 5, 
-			progressive: true, 
+		.pipe(imagemin({
+			optimizationLevel: 5,
+			progressive: true,
 			interlaced: true,
 			use: [pngquant()]
 		}))

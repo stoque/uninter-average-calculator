@@ -407,8 +407,8 @@ p {
   transition: transform 0.6s ease-in-out;
   transition: transform 0.6s ease-in-out, -webkit-transform 0.6s ease-in-out;
   max-width: 600px;
-  width: 500px;
-  padding: 4rem;
+  width: 300px;
+  padding: 3rem;
   background: #fff;
   border-radius: 4px;
   z-index: 103;
@@ -447,5 +447,10 @@ p {
 @media only screen and (min-width: 992px) {
   .brand a {
     font-size: 1.75rem;
+  }
+
+  .modal-alert > .wrap > .dialog {
+    width: 500px;
+    padding: 4rem;
   }
 }

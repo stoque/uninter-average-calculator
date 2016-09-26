@@ -41,14 +41,18 @@
       transform translate(-50%,-150%)
       transition transform .6s ease-in-out
       max-width 600px
-      width 500px;
-      padding $space-lg
+      width 300px
+      padding $space-md
       background #fff
       border-radius 4px
       z-index 103
       font-size rem(16px)
       text-align center
       color $text-color
+
+      +above($desktop)
+        width 500px
+        padding $space-lg
 
 
       > .close

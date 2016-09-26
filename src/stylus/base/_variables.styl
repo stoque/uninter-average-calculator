@@ -59,7 +59,7 @@ $green       = #afcc49
 
 $text-color      = $gray-darker
 
-$brand-primary   = #2ecc71
+$brand-primary   = #3498db
 
 $brand-success   = $green
 $brand-info      = $blue
@@ -85,26 +85,27 @@ $space-gutter  = $space
 // 3. Media Queries
 // --------------------------------------------------
 
-$screen-xs   = 520px  // Extra small screen / phone
-$screen-sm   = 768px  // Small screen / tablet
-$screen-md   = 992px  // Medium screen / desktop
-$screen-lg   = 1200px // Large screen / wide desktop
-$screen-xlg  = 1400px // Extra Large screen / wide desktop
-$screen-xxlg = 1900px // Extra Large screen / wide desktop
+$smartphone   			= 520px  // Extra small screen / phone
+$tablet   					= 768px  // Small screen / tablet
+$desktop  					= 992px  // Medium screen / desktop
+$wide-desktop 		  = 1200px // Large screen / wide desktop
+$wide-desktop-lg  	= 1600px // Extra Large screen / wide desktop
+$widte-desktop-xlg 	= 1900px // Extra Large screen / wide desktop
+
 
 // Rupture Settings
-rupture.mobile-cutoff  = $screen-sm
-rupture.tablet-cutoff  = $screen-md
-rupture.desktop-cutoff = $screen-lg
-rupture.hd-cutoff      = $screen-xlg
+rupture.mobile-cutoff  = $tablet
+rupture.tablet-cutoff  = $desktop
+rupture.desktop-cutoff = $wide-desktop
+rupture.hd-cutoff      = $wide-desktop-lg
 
-rupture.scale          = 0 $screen-xs $screen-sm $screen-md $screen-lg $screen-xlg $screen-xxlg
-rupture.scale-names    = '0' 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
-rupture.anti-overlap   = -1px
+rupture.scale        = 0 $smartphone $tablet $desktop $wide-desktop $wide-desktop-lg $widte-desktop-xlg
+rupture.scale-names  = '0' 'xs' 'sm' 'md' 'lg' 'xlg' 'hd'
+rupture.anti-overlap = -1px
 
 
 //
 // 4. Typography
 // --------------------------------------------------
-
+$font-family = 'Open Sans', sans-serif
 $text-size = 2rem

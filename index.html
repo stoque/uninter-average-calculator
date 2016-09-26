@@ -4,59 +4,65 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Calcula de Média - Uninter</title>
-	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta name="theme-color" content="#3498db">
+	<title>Calcula de Média - UNINTER</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<link rel="stylesheet" href="assets/styles/main.min.css">
 </head>
 <body>
+	<header class="main-header">
+		<div class="container">
+			<h1 class="brand"><a href="/">Calcula Média - UNINTER</a></h1>
+		</div>
+	</header>
 
-	<form id="form" class="form-primary">
-		<h1 class="title"><a href="/">Calcula Média - Uninter</a></h1>
+	<main>
+		<form id="form" class="form-primary">
+			<p class="description">Preencha as notas abaixo:</p>
 
-		<p class="description">Preencha as notas abaixo:</p>
+			<label for="apol01">APOL 1</label>
+			<input type="number" id="apol01" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="apol01">APOL 1</label>
-		<input type="number" id="apol01" placeholder="Digite a nota que você obteve aqui">
+			<label for="apol02">APOL 2</label>
+			<input type="number" id="apol02" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="apol02">APOL 2</label>
-		<input type="number" id="apol02" placeholder="Digite a nota que você obteve aqui">
+			<label for="apol03">APOL 3</label>
+			<input type="number" id="apol03" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="apol03">APOL 3</label>
-		<input type="number" id="apol03" placeholder="Digite a nota que você obteve aqui">
+			<label for="apol04">APOL 4</label>
+			<input type="number" id="apol04" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="apol04">APOL 4</label>
-		<input type="number" id="apol04" placeholder="Digite a nota que você obteve aqui">
+			<label for="apol05">APOL 5</label>
+			<input type="number" id="apol05" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="apol05">APOL 5</label>
-		<input type="number" id="apol05" placeholder="Digite a nota que você obteve aqui">
+			<label for="po">Prova Objetiva (PO)</label>
+			<input type="number" id="po" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="po">Prova Objetiva (PO)</label>
-		<input type="number" id="po" placeholder="Digite a nota que você obteve aqui">
+			<label for="ap">Avaliação Prática (AP)</label>
+			<input type="number" id="ap" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="ap">Avaliação Prática (AP)</label>
-		<input type="number" id="ap" placeholder="Digite a nota que você obteve aqui">
+			<label for="pd">Prova Discursiva (PD)</label>
+			<input type="number" id="pd" placeholder="Digite a nota que você obteve aqui">
 
-		<label for="pd">Prova Discursiva (PD)</label>
-		<input type="number" id="pd" placeholder="Digite a nota que você obteve aqui">
-<!--
-		<button type="button" id="btnCalcula" class="btn-primary">Calcular Média</button> -->
+			<label for="open-modal" id="btnCalcula" class="btn-primary">Calcular</label>
+		</form>
 
-		<label for="open-modal" id="btnCalcula" class="btn-primary">Calcular Média</label>
+		<div class="modal-alert">
+	  	<input class="open" id="open-modal" type="checkbox" hidden>
 
-
-	</form>
-
-	<div class="modal-alert">
-  	<input class="open" id="open-modal" type="checkbox" hidden>
-
-		<div class="wrap">
-			<label for="open-modal" class="overlay"></label>
-			<div class="dialog">
-				<label for="open-modal" class="close">x</label>
-				<p id="info"></p>
+			<div class="wrap">
+				<label for="open-modal" class="overlay"></label>
+				<div class="dialog">
+					<label for="open-modal" class="close">x</label>
+					<p id="info"></p>
+				</div>
 			</div>
 		</div>
-	</div>
+	</main>
+
+	<footer class="main-footer">
+		<p>Desenvolvido por <a href="https://lucastoque.com">Lucas Stoque</a> com ❤ - <a href="https://github.com/stoque/calcula-media-uninter">Código Fonte</a></p>
+	</footer>
 
 <!-- scripts -->
 <script src="assets/scripts/main.js"></script>

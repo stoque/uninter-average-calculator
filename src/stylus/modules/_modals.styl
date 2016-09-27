@@ -57,16 +57,20 @@
 
       > .close
         position absolute
-        right $space-xs
-        top 0
-        padding $space-xs
-        font-size rem(22px)
+        right 0
+        top 0px
+        padding $space-xs $space-sm
+        font-size rem(15px)
         font-weight bold
-        color $brand-primary
+        color #fff
+        background #c0392b
+        border-radius 1px
+        transition background .6s
         cursor pointer
 
         &:hover
-          color darken($brand-primary,20%)
+          color #fff
+          background darken(#c0392b,20%)
 
 .success
   color #27ae60

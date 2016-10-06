@@ -1,6 +1,6 @@
-var $btnCalcula = document.querySelector('#btnCalcula');
+// var $btnCalcula = document.querySelector('#btnCalcula');
 
-$btnCalcula.addEventListener('click', calculaMedia);
+// $btnCalcula.addEventListener('click', calculaMedia);
 
 function calculaNota1() {
   $po = parseInt(document.querySelector('#po').value);
@@ -59,3 +59,13 @@ function calculaMedia() {
     $info.innerHTML = 'Infelizmente sua média foi ' + '<strong>' + md + '</strong>'  + ' e você está de <strong class="error">reprovado!</strong>';
   }
 }
+
+document.querySelector('.form-primary').addEventListener('submit', function(event) {
+
+  event.preventDefault();
+
+  calculaMedia();
+
+  document.querySelector('#open-modal').checked=true;
+
+});

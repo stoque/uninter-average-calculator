@@ -294,6 +294,7 @@ p {
   transition: 0.6s;
   text-align: center;
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .btn-primary:hover {

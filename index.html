@@ -30,34 +30,35 @@
 			<p class="description">Preencha as notas abaixo:</p>
 
 			<label for="apol01">APOL 1</label>
-			<input type="number" id="apol01" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="apol01" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="apol02">APOL 2</label>
-			<input type="number" id="apol02" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="apol02" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="apol03">APOL 3</label>
-			<input type="number" id="apol03" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="apol03" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="apol04">APOL 4</label>
-			<input type="number" id="apol04" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="apol04" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="apol05">APOL 5</label>
-			<input type="number" id="apol05" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="apol05" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="po">Prova Objetiva (PO)</label>
-			<input type="number" id="po" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="po" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="ap">Avaliação Prática (AP)</label>
-			<input type="number" id="ap" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="ap" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
 			<label for="pd">Prova Discursiva (PD)</label>
-			<input type="number" id="pd" placeholder="Digite a nota que você obteve aqui">
+			<input type="number" id="pd" placeholder="Digite a nota que você obteve aqui" min="0" max="100" required>
 
-			<label for="open-modal" id="btnCalcula" class="btn-primary">Calcular</label>
+			<input type="submit" class="btn-primary" value="Calcular">
+
 		</form>
 
 		<div class="modal-alert">
-	  	<input class="open" id="open-modal" type="checkbox" hidden>
+	  	<input class="open" id="open-modal" type="checkbox">
 
 			<div class="wrap">
 				<label for="open-modal" class="overlay"></label>

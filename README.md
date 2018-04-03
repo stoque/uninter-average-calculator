@@ -1,5 +1,5 @@
-# Calcula Média Uninter
+# Uninter Average Calculator
 
-Sistema que calcula a média final da Uninter
+Calculator of the final average of the engineering courses of the university Uninter
 
-[Acesse o projeto](https://lucastoque.com/calcula-media-uninter)
+[Access the project in production](https://lucastoque.com/calcula-media-uninter)
